@@ -1,1 +1,1 @@
-# design-patterns-csharp
+# design-patterns-ts
