@@ -30,4 +30,14 @@ export class Seller {
     const product = this.products.splice(productIndex, 1);
     return product[0];
   }
+
+  viewProducts(): void {
+    if (!this.mediator) return;
+    this.mediator.showProducts();
+  }
+
+  buy(id: string): void {
+    if (!this.mediator) return;
+    this.mediator.buy(id);
+  }
 }
